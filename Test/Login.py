@@ -27,8 +27,8 @@ class FutureFuel(unittest.TestCase):
         driver.get("https://futurefuel.io/login")
         self.assertIn("FutureFuel - Log In", driver.title)
         driver.find_element_by_class_name("logo").is_displayed()
-        driver.find_element_by_name("email").send_keys('patil.va@husky.neu.edu')
-        driver.find_element_by_name("password").send_keys('football')    
+        driver.find_element_by_name("email").send_keys('abc@gmail.com')
+        driver.find_element_by_name("password").send_keys('password123')    
         driver.find_element_by_css_selector("button.btn.btn-blue").click()
         time.sleep(5)
         profileName = driver.find_element_by_css_selector("h2.candidate-name").text
